@@ -118,3 +118,28 @@ button:hover {
     font-size: 15px;
   }
 }
+/* Step container */
+.step {
+  display: none;
+}
+
+/* Show active step */
+.step.active {
+  display: block;
+}
+
+/* Progress bar */
+#progressBar {
+  height: 10px;
+  width: 100%;
+  background: #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#progress {
+  height: 100%;
+  background: #3498db;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
