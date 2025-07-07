@@ -3,85 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Career Suggestion Tool</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+  <title>Career Suggestion Quiz</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Career Suggestion Tool</h1>
+    <h1>Career Suggestion Survey</h1>
+
     <form id="careerForm">
-      <h3>1. What are your interests?</h3>
-      <label><input type="checkbox" name="interest" value="science"> Science</label>
-      <label><input type="checkbox" name="interest" value="design"> Design</label>
-      <label><input type="checkbox" name="interest" value="writing"> Writing</label>
-      <label><input type="checkbox" name="interest" value="business"> Business</label>
-      <label><input type="checkbox" name="interest" value="technology"> Technology</label>
+      <!-- STEP 1 -->
+      <div class="step" id="step-1">
+        <h3>1. What are your interests?</h3>
+        <label><input type="checkbox" name="interest" value="science"> Science</label>
+        <label><input type="checkbox" name="interest" value="technology"> Technology</label>
+        <label><input type="checkbox" name="interest" value="design"> Design</label>
+        <label><input type="checkbox" name="interest" value="writing"> Writing</label>
+        <label><input type="checkbox" name="interest" value="business"> Business</label>
+      </div>
 
-      <h3>2. What are your strengths?</h3>
-      <label><input type="checkbox" name="skill" value="analytical"> Analytical Thinking</label>
-      <label><input type="checkbox" name="skill" value="creative"> Creativity</label>
-      <label><input type="checkbox" name="skill" value="communication"> Communication</label>
-      <label><input type="checkbox" name="skill" value="technical"> Technical Skills</label>
-      <label><input type="checkbox" name="skill" value="leadership"> Leadership</label>
+      <!-- STEP 2 -->
+      <div class="step" id="step-2">
+        <h3>2. What are your key skills?</h3>
+        <label><input type="checkbox" name="skill" value="analytical"> Analytical</label>
+        <label><input type="checkbox" name="skill" value="creative"> Creative</label>
+        <label><input type="checkbox" name="skill" value="communication"> Communication</label>
+        <label><input type="checkbox" name="skill" value="technical"> Technical</label>
+        <label><input type="checkbox" name="skill" value="leadership"> Leadership</label>
+      </div>
 
-      <h3>3. How do you prefer to learn?</h3>
-      <label><input type="checkbox" name="learning" value="visual"> Visual</label>
-      <label><input type="checkbox" name="learning" value="hands-on"> Hands-On</label>
-      <label><input type="checkbox" name="learning" value="theory"> Reading/Theory</label>
+      <!-- STEP 3 -->
+      <div class="step" id="step-3">
+        <h3>3. How do you prefer to learn?</h3>
+        <label><input type="checkbox" name="learning" value="visual"> Visual</label>
+        <label><input type="checkbox" name="learning" value="auditory"> Auditory</label>
+        <label><input type="checkbox" name="learning" value="hands-on"> Hands-on</label>
+      </div>
 
-      <h3>4. What work environment suits you best?</h3>
-      <label><input type="checkbox" name="env" value="team"> Collaborative/Teamwork</label>
-      <label><input type="checkbox" name="env" value="solo"> Independent</label>
-      <label><input type="checkbox" name="env" value="remote"> Remote/Flexible</label>
+      <!-- STEP 4 -->
+      <div class="step" id="step-4">
+        <h3>4. What kind of work environment do you prefer?</h3>
+        <label><input type="checkbox" name="env" value="indoor"> Indoor</label>
+        <label><input type="checkbox" name="env" value="outdoor"> Outdoor</label>
+        <label><input type="checkbox" name="env" value="remote"> Remote</label>
+      </div>
 
-      <h3>5. What values matter most to you?</h3>
-      <label><input type="checkbox" name="value" value="impact"> Social Impact</label>
-      <label><input type="checkbox" name="value" value="innovation"> Innovation</label>
-      <label><input type="checkbox" name="value" value="stability"> Job Stability</label>
-      <label><input type="checkbox" name="value" value="creativity"> Creativity</label>
-        
-      <h3>6. What subjects do you enjoy most?</h3>
-      <label><input type="checkbox" name="subject" value="math"> Mathematics</label>
-      <label><input type="checkbox" name="subject" value="biology"> Biology</label>
-      <label><input type="checkbox" name="subject" value="literature"> Literature</label>
-      <label><input type="checkbox" name="subject" value="social"> Social Sciences</label>
-      <label><input type="checkbox" name="subject" value="computers"> Computer Science</label>
-      
-      <h3>7. Which tools or activities do you like?</h3>
-      <label><input type="checkbox" name="tools" value="coding"> Coding</label>
-      <label><input type="checkbox" name="tools" value="writing"> Writing</label>
-      <label><input type="checkbox" name="tools" value="drawing"> Drawing</label>
-      <label><input type="checkbox" name="tools" value="public-speaking"> Public Speaking</label>
-      
-      <h3>8. Do you prefer working with people, data, or things?</h3>
-      <label><input type="checkbox" name="type" value="people"> People</label>
-      <label><input type="checkbox" name="type" value="data"> Data</label>
-      <label><input type="checkbox" name="type" value="things"> Physical Objects/Tools</label>
-      
-      <h3>9. What kind of goals motivate you?</h3>
-      <label><input type="checkbox" name="goal" value="impact"> Making a difference</label>
-      <label><input type="checkbox" name="goal" value="money"> Earning high income</label>
-      <label><input type="checkbox" name="goal" value="prestige"> Recognition & respect</label>
-      <label><input type="checkbox" name="goal" value="freedom"> Flexible work/life</label>
-      
-      <h3>10. What's your personality like?</h3>
-      <label><input type="checkbox" name="personality" value="creative"> Creative</label>
-      <label><input type="checkbox" name="personality" value="logical"> Logical</label>
-      <label><input type="checkbox" name="personality" value="empathetic"> Empathetic</label>
-      <label><input type="checkbox" name="personality" value="curious"> Curious</label>
+      <!-- STEP 5 -->
+      <div class="step" id="step-5">
+        <h3>5. What values matter most to you?</h3>
+        <label><input type="checkbox" name="value" value="impact"> Making a social impact</label>
+        <label><input type="checkbox" name="value" value="innovation"> Innovation</label>
+        <label><input type="checkbox" name="value" value="stability"> Job stability</label>
+      </div>
 
-      
-      <br><br>
-      <button type="submit">Get Career Suggestions</button>
+      <!-- STEP 6 -->
+      <div class="step" id="step-6">
+        <h3>6. What subjects do you enjoy most?</h3>
+        <label><input type="checkbox" name="subject" value="math"> Mathematics</label>
+        <label><input type="checkbox" name="subject" value="biology"> Biology</label>
+        <label><input type="checkbox" name="subject" value="literature"> Literature</label>
+        <label><input type="checkbox" name="subject" value="social"> Social Sciences</label>
+        <label><input type="checkbox" name="subject" value="computers"> Computer Science</label>
+      </div>
+
+      <!-- STEP 7 -->
+      <div class="step" id="step-7">
+        <h3>7. Which tools or activities do you enjoy?</h3>
+        <label><input type="checkbox" name="tools" value="coding"> Coding</label>
+        <label><input type="checkbox" name="tools" value="writing"> Writing</label>
+        <label><input type="checkbox" name="tools" value="drawing"> Drawing</label>
+        <label><input type="checkbox" name="tools" value="public-speaking"> Public Speaking</label>
+      </div>
+
+      <!-- STEP 8 -->
+      <div class="step" id="step-8">
+        <h3>8. Do you prefer working with people, data, or things?</h3>
+        <label><input type="checkbox" name="type" value="people"> People</label>
+        <label><input type="checkbox" name="type" value="data"> Data</label>
+        <label><input type="checkbox" name="type" value="things"> Things</label>
+      </div>
+
+      <!-- STEP 9 -->
+      <div class="step" id="step-9">
+        <h3>9. What kind of goals motivate you?</h3>
+        <label><input type="checkbox" name="goal" value="impact"> Making a difference</label>
+        <label><input type="checkbox" name="goal" value="money"> Earning high income</label>
+        <label><input type="checkbox" name="goal" value="prestige"> Recognition & respect</label>
+        <label><input type="checkbox" name="goal" value="freedom"> Freedom & flexibility</label>
+      </div>
+
+      <!-- STEP 10 -->
+      <div class="step" id="step-10">
+        <h3>10. What's your personality like?</h3>
+        <label><input type="checkbox" name="personality" value="creative"> Creative</label>
+        <label><input type="checkbox" name="personality" value="logical"> Logical</label>
+        <label><input type="checkbox" name="personality" value="empathetic"> Empathetic</label>
+        <label><input type="checkbox" name="personality" value="curious"> Curious</label>
+      </div>
+
+      <!-- NAVIGATION BUTTONS -->
+      <div id="navigation">
+        <button type="button" id="prevBtn">Back</button>
+        <button type="button" id="nextBtn">Next</button>
+        <button type="submit" id="submitBtn" style="display:none;">Get Career Suggestions</button>
+      </div>
+
+      <!-- PROGRESS BAR -->
+      <div id="progressBar">
+        <div id="progress" style="width: 0%;"></div>
+      </div>
     </form>
 
-    <div id="result" class="result"></div>
-
-    <div id="extras" style="display: none;">
-      <button onclick="copyToClipboard()">📋 Copy Result</button>
-      <button onclick="downloadPDF()">📄 Download PDF</button>
-    </div>
+    <!-- RESULTS -->
+    <div id="result"></div>
   </div>
 
   <script src="script.js"></script>
