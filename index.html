@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Suggestion Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Career Suggestion Tool</h1>
+    <form id="careerForm">
+      <h3>1. What are your interests?</h3>
+      <label><input type="checkbox" name="interest" value="science"> Science</label>
+      <label><input type="checkbox" name="interest" value="design"> Design</label>
+      <label><input type="checkbox" name="interest" value="writing"> Writing</label>
+      <label><input type="checkbox" name="interest" value="business"> Business</label>
+      <label><input type="checkbox" name="interest" value="technology"> Technology</label>
+
+      <h3>2. What are your strengths?</h3>
+      <label><input type="checkbox" name="skill" value="analytical"> Analytical Thinking</label>
+      <label><input type="checkbox" name="skill" value="creative"> Creativity</label>
+      <label><input type="checkbox" name="skill" value="communication"> Communication</label>
+      <label><input type="checkbox" name="skill" value="technical"> Technical Skills</label>
+      <label><input type="checkbox" name="skill" value="leadership"> Leadership</label>
+
+      <h3>3. How do you prefer to learn?</h3>
+      <label><input type="checkbox" name="learning" value="visual"> Visual</label>
+      <label><input type="checkbox" name="learning" value="hands-on"> Hands-On</label>
+      <label><input type="checkbox" name="learning" value="theory"> Reading/Theory</label>
+
+      <h3>4. What work environment suits you best?</h3>
+      <label><input type="checkbox" name="env" value="team"> Collaborative/Teamwork</label>
+      <label><input type="checkbox" name="env" value="solo"> Independent</label>
+      <label><input type="checkbox" name="env" value="remote"> Remote/Flexible</label>
+
+      <h3>5. What values matter most to you?</h3>
+      <label><input type="checkbox" name="value" value="impact"> Social Impact</label>
+      <label><input type="checkbox" name="value" value="innovation"> Innovation</label>
+      <label><input type="checkbox" name="value" value="stability"> Job Stability</label>
+      <label><input type="checkbox" name="value" value="creativity"> Creativity</label>
+
+      <br><br>
+      <button type="submit">Get Career Suggestions</button>
+    </form>
+
+    <div id="result" class="result"></div>
+
+    <div id="extras" style="display: none;">
+      <button onclick="copyToClipboard()">📋 Copy Result</button>
+      <button onclick="downloadPDF()">📄 Download PDF</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
