@@ -1,0 +1,17 @@
+#extras {
+  margin-top: 20px;
+}
+
+#extras button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: #2b6777;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#extras button:hover {
+  background-color: #1e4c5a;
+}
