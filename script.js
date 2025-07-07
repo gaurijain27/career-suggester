@@ -212,6 +212,7 @@ form.addEventListener("submit", function (e) {
   `;
 });
 
+shareBox.style.display = "block";
 
 // Share & copy buttons
 const shareBox = document.getElementById("shareOptions");
