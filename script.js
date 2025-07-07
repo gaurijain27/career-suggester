@@ -6,6 +6,11 @@ document.getElementById("careerForm").addEventListener("submit", function(event)
   const learning = getCheckedValues("learning");
   const env = getCheckedValues("env");
   const values = getCheckedValues("value");
+  const subject = getCheckedValues("subject");
+  const tools = getCheckedValues("tools");
+  const type = getCheckedValues("type");
+  const goal = getCheckedValues("goal");
+  const personality = getCheckedValues("personality");
 
   // Check if nothing is selected at all
   const totalSelected =
