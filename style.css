@@ -83,3 +83,18 @@ label {
   font-size: 1rem;
   color: #333;
 }
+
+#shareOptions button {
+  background-color: #1a73e8;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#shareOptions button:hover {
+  background-color: #155ab6;
+}
