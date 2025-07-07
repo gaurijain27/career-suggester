@@ -211,3 +211,22 @@ form.addEventListener("submit", function (e) {
     <ul>${suggestions.join("")}</ul>
   `;
 });
+
+
+// Share & copy buttons
+const shareBox = document.getElementById("shareOptions");
+const copyBtn = document.getElementById("copyBtn");
+const shareBtn = document.getElementById("shareBtn");
+
+copyBtn.addEventListener("click", () => {
+  const text = resultBox.innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Results copied to clipboard!");
+  });
+});
+
+shareBtn.addEventListener("click", () => {
+  const text = encodeURIComponent(resultBox.innerText);
+  const url = `https://wa.me/?text=${text}`;
+  window.open(url, "_blank");
+});
